@@ -9,7 +9,7 @@
   
   
   <modules>
-    <module>yjcycc-tools-elk</module>
+    <module>yjcycc-tools-common</module>
   </modules>
   
 
@@ -26,7 +26,7 @@
   	<dependencies>
   		<dependency>
   			<groupId>com.yjcycc.tools</groupId>
-  			<artifactId>yjcycc-tools-common</artifactId>
+  			<artifactId>yjcycc-tools-elk</artifactId>
   			<version>0.0.1-SNAPSHOT</version>
   		</dependency>
   	</dependencies>

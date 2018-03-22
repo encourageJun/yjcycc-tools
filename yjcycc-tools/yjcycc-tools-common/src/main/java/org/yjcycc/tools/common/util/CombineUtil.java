@@ -29,6 +29,9 @@ public class CombineUtil {
 		for (String gridCode : gridSet) {
 			gridsSB.append("'").append(gridCode).append("',");
 		}
+		if (gridsSB.length() <= 0) {
+			return null;
+		}
 		
 		return gridsSB.substring(0, gridsSB.length()-1);
 	}

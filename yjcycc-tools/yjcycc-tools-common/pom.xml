@@ -15,7 +15,31 @@
       <artifactId>junit</artifactId>
       <version>3.8.1</version>
       <scope>test</scope>
-    </dependency>	
+    </dependency>
+    
+    <!-- zookeeper -->
+	<dependency>
+		<groupId>org.apache.zookeeper</groupId>
+		<artifactId>zookeeper</artifactId>
+		<version>3.4.6</version>
+	</dependency>
+	
+	<!-- curator -->
+    <dependency>
+        <groupId>org.apache.curator</groupId>
+        <artifactId>curator-framework</artifactId>
+        <version>2.9.1</version>
+    </dependency>
+    <dependency>
+        <groupId>org.apache.curator</groupId>
+        <artifactId>curator-client</artifactId>
+        <version>2.9.1</version>
+    </dependency>
+    <dependency>
+        <groupId>org.apache.curator</groupId>
+        <artifactId>curator-recipes</artifactId>
+        <version>2.9.1</version>
+    </dependency>
     
     <!-- servlet -->
 	<dependency>
@@ -114,12 +138,12 @@
 		<version>1.2.1</version>
 	</dependency>
 
-	<!-- https://mvnrepository.com/artifact/com.google.guava/guava -->
+	<!-- https://mvnrepository.com/artifact/com.google.guava/guava 
 	<dependency>
 		<groupId>com.google.guava</groupId>
 		<artifactId>guava</artifactId>
 		<version>24.0-jre</version>
-	</dependency>
+	</dependency>-->
 
 	<!-- https://mvnrepository.com/artifact/net.sf.json-lib/json-lib -->
 	<dependency>
@@ -145,6 +169,23 @@
 	    <groupId>commons-httpclient</groupId>
 	    <artifactId>commons-httpclient</artifactId>
 	    <version>3.1</version>
+	</dependency>
+	
+	<!-- fasterxml -->
+	<dependency>
+		<groupId>com.fasterxml.jackson.core</groupId>
+		<artifactId>jackson-core</artifactId>
+		<version>2.3.3</version>
+	</dependency>
+	<dependency>
+		<groupId>com.fasterxml.jackson.core</groupId>
+		<artifactId>jackson-databind</artifactId>
+		<version>2.3.3</version>
+	</dependency>
+	<dependency>
+		<groupId>com.fasterxml.jackson.core</groupId>
+		<artifactId>jackson-annotations</artifactId>
+		<version>2.4.0</version>
 	</dependency>
 
   </dependencies>

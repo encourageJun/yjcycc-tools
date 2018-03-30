@@ -10,8 +10,6 @@ import java.util.List;
  */
 public interface MyBatisBaseMapper<T> {
 
-	public T get(Integer id);
-	
 	public T get(T entity);
 	
 	public List<T> findPager(T entity);

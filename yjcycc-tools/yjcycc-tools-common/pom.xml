@@ -188,12 +188,12 @@
 		<version>2.4.0</version>
 	</dependency>
 	
-	<!-- mybatis pager plugin -->
+	<!-- mybatis pager plugin 
 	<dependency>
 	    <groupId>com.github.pagehelper</groupId>
 	    <artifactId>pagehelper</artifactId>
 	    <version>5.0.4</version>
-	</dependency>
+	</dependency>-->
 
   </dependencies>
 </project>

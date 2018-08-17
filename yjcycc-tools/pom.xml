@@ -10,6 +10,7 @@
   
   <modules>
     <module>yjcycc-tools-common</module>
+    <module>yjcycc-tools-gcmp</module>
   </modules>
   
 

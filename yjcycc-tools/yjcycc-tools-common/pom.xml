@@ -9,6 +9,15 @@
   </parent>
   <artifactId>yjcycc-tools-common</artifactId>
   
+  <properties>
+  	<poi.version>3.9</poi.version>
+  	<commons-lang3.version>3.3.2</commons-lang3.version>
+	<commons-io.version>2.4</commons-io.version>
+	<commons-codec.version>1.9</commons-codec.version>
+	<commons-fileupload.version>1.3.1</commons-fileupload.version>
+	<commons-beanutils.version>1.9.1</commons-beanutils.version>
+  </properties>
+  
   <dependencies>
     <dependency>
       <groupId>junit</groupId>
@@ -75,21 +84,37 @@
 		<version>1.2.16</version>
 	</dependency>
 	
-	<!-- commons -->
+	<!-- GENERAL UTILS begin -->
 	<dependency>
-		<groupId>commons-lang</groupId>
-		<artifactId>commons-lang</artifactId>
-		<version>2.6</version>
-	</dependency>
-	<dependency>
-		<groupId>commons-fileupload</groupId>
-		<artifactId>commons-fileupload</artifactId>
-		<version>1.3.1</version>
+		<groupId>org.apache.commons</groupId>
+		<artifactId>commons-lang3</artifactId>
+		<version>${commons-lang3.version}</version>
 	</dependency>
 	<dependency>
 		<groupId>commons-io</groupId>
 		<artifactId>commons-io</artifactId>
-		<version>2.4</version>
+		<version>${commons-io.version}</version>
+	</dependency>
+	<dependency>
+		<groupId>commons-codec</groupId>
+		<artifactId>commons-codec</artifactId>
+		<version>${commons-codec.version}</version>
+	</dependency>
+	<dependency>
+	    <groupId>commons-fileupload</groupId>
+	    <artifactId>commons-fileupload</artifactId>
+	    <version>${commons-fileupload.version}</version>
+	</dependency>
+	<dependency>
+		<groupId>commons-beanutils</groupId>
+		<artifactId>commons-beanutils</artifactId>
+		<version>${commons-beanutils.version}</version>
+		<exclusions>
+			<exclusion>
+				<groupId>commons-logging</groupId>
+				<artifactId>commons-logging</artifactId>
+			</exclusion>
+		</exclusions>
 	</dependency>
 	
 	<!-- https://mvnrepository.com/artifact/javax.mail/mail -->
@@ -194,6 +219,28 @@
 	    <artifactId>pagehelper</artifactId>
 	    <version>5.0.4</version>
 	</dependency>-->
+	
+	<!-- poi office -->
+	<dependency>
+		<groupId>org.apache.poi</groupId>
+		<artifactId>poi</artifactId>
+		<version>${poi.version}</version>
+	</dependency>
+	<dependency>
+		<groupId>org.apache.poi</groupId>
+		<artifactId>poi-ooxml</artifactId>
+		<version>${poi.version}</version>
+	</dependency>
+	<dependency>
+		<groupId>org.apache.poi</groupId>
+		<artifactId>poi-ooxml-schemas</artifactId>
+		<version>${poi.version}</version>
+	</dependency>
+	<dependency>
+		<groupId>org.apache.poi</groupId>
+		<artifactId>poi-scratchpad</artifactId>
+		<version>${poi.version}</version>
+	</dependency>
 
   </dependencies>
 </project>

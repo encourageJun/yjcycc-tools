@@ -1,4 +1,4 @@
-package org.yjcycc.tools.common.gis;
+package org.yjcycc.tools.baiduapi.gis;
 
 import java.math.BigDecimal;
 
@@ -19,7 +19,7 @@ public class BaiduOperatorDistance extends OperatorDistance {
 		double lon2 = toRad(p2.getX());
 		double lat2 = toRad(p2.getY());
 		
-		double distance = org.yjcycc.tools.common.gis.Geometry.EARTHRADIUS *
+		double distance = org.yjcycc.tools.baiduapi.gis.Geometry.EARTHRADIUS *
 				Math.acos((Math.sin(lat1) * Math.sin(lat2) + Math.cos(lat1) * Math.cos(lat2) * Math.cos(lon2 - lon1)));
 		
 		
@@ -29,6 +29,6 @@ public class BaiduOperatorDistance extends OperatorDistance {
 	}
 	
 	private double toRad(double degree) {
-		return org.yjcycc.tools.common.gis.Geometry .degreeToRad(degree);
+		return org.yjcycc.tools.baiduapi.gis.Geometry .degreeToRad(degree);
 	}
 }

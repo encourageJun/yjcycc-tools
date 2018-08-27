@@ -3,8 +3,8 @@ package org.yjcycc.tools.baiduapi;
 import org.apache.commons.lang.StringUtils;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-import org.yjcycc.tools.common.gis.dto.BaiduPoiDTO;
-import org.yjcycc.tools.common.properties.BaiduApiProperties;
+import org.yjcycc.tools.baiduapi.gis.dto.BaiduPoiDTO;
+import org.yjcycc.tools.baiduapi.properties.BaiduApiProperties;
 import org.yjcycc.tools.common.util.HttpClientUtil;
 
 import net.sf.json.JSONObject;

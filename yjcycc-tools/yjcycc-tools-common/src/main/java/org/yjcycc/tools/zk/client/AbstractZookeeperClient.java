@@ -188,7 +188,7 @@ public abstract class AbstractZookeeperClient {
 	
 	/**
 	 * 轮询获取一个活着的节点，负载均衡. 不区分灰度还是白度，一视同仁
-	 * @see com.ihavecar.common.rmi.XxZookeeperClient#getOneLivingIpPort()
+	 * @see AbstractZookeeperClient#getOneLivingXxNode()
 	 */
 	public XxNode getOneLivingXxNode(){
 		int count = xxNodes.size();

@@ -1,4 +1,4 @@
-package org.yjcycc.tools.common.gis.dto;
+package org.yjcycc.tools.baiduapi.gis.dto;
 
 import java.io.Serializable;
 

@@ -5,9 +5,9 @@ import java.net.URLEncoder;
 import org.apache.commons.lang.StringUtils;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-import org.yjcycc.tools.common.gis.Point;
-import org.yjcycc.tools.common.gis.dto.RouteMatrixDTO;
-import org.yjcycc.tools.common.properties.BaiduApiProperties;
+import org.yjcycc.tools.baiduapi.gis.Point;
+import org.yjcycc.tools.baiduapi.gis.dto.RouteMatrixDTO;
+import org.yjcycc.tools.baiduapi.properties.BaiduApiProperties;
 import org.yjcycc.tools.common.util.HttpClientUtil;
 
 import net.sf.json.JSONArray;

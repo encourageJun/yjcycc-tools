@@ -106,7 +106,7 @@ public abstract class AbstractZookeeperClientRegister {
 	
 	/**
 	 * 创建Zookeeper 客户端  并创建临时树节点
-	 * @param xxNode
+	 * @param usingIpPort
 	 * @return
 	 */
 	public boolean createTreeNode(XxNode usingIpPort) throws Exception {
@@ -311,7 +311,6 @@ public abstract class AbstractZookeeperClientRegister {
 	 * 兄弟节点更新了
 	 * @param path 事件节点的路径
 	 * @param event 事件对象（包含事件中的数据）
-	 * @param meDataPath  
 	 */
 	public void zookeeperChildUpdate(String path, PathChildrenCacheEvent event) {
 		final String meDataPath = getNodePathForZk() +"/"+ this.xxNode.getUip().getPid();

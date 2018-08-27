@@ -242,5 +242,19 @@
 		<version>${poi.version}</version>
 	</dependency>
 
+	<!-- druid -->
+	<dependency>
+	  <groupId>com.alibaba</groupId>
+	  <artifactId>druid</artifactId>
+	  <version>1.0.9</version>
+	</dependency>
+
+	<!-- mybatis pager plugin -->
+	<dependency>
+	  <groupId>com.github.pagehelper</groupId>
+	  <artifactId>pagehelper</artifactId>
+	  <version>5.0.4</version>
+	</dependency>
+
   </dependencies>
 </project>

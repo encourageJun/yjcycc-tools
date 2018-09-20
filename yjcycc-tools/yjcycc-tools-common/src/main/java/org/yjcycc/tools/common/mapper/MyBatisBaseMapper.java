@@ -11,17 +11,23 @@ import java.util.Map;
  */
 public interface MyBatisBaseMapper<T> {
 
-	public T get(T entity);
+	T getById(Long id);
+
+	T get(T entity);
 	
-	public List<T> findPager(T entity);
+	List<T> findPager(T entity);
 	
-	public List<T> findPagerByMap(Map<String,Object> map);
+	List<T> findPagerByMap(Map<String,Object> map);
+
+	List<T> findList(T entity);
+
+	List<T> findListByMap(Map<String,Object> map);
 	
-	public int insert(T entity);
+	int insert(T entity);
 	
-	public int update(T entity);
+	int update(T entity);
 	
-	public int delete(T entity);
+	int delete(T entity);
 	
 	T getByMap(Map<String,Object> map);
 

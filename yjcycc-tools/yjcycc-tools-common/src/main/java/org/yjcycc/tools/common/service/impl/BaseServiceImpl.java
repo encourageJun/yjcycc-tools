@@ -32,7 +32,17 @@ public class BaseServiceImpl<T> implements BaseService<T> {
 		return PagerUtil.getPager(new PageInfo<T>(list));
 	}
 
-//	@Override
+	@Override
+	public List<T> findList(T t) throws RemoteException {
+		return baseMapper.findList(t);
+	}
+
+	@Override
+	public List<T> findListByMap(Map<String, Object> map) throws RemoteException {
+		return baseMapper.findListByMap(map);
+	}
+
+	//	@Override
 	public T get(T entity) throws RemoteException {
 		return baseMapper.get(entity);
 	}

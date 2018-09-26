@@ -24,7 +24,7 @@ import org.springframework.context.Lifecycle;
  * @author Rosun
  *
  */
-public abstract class AbstractJMSConsumer implements Lifecycle, Runnable,InitializingBean{
+public abstract class AbstractJMSConsumer implements Lifecycle, Runnable, InitializingBean{
 	
 
 	protected static Logger logger = LoggerFactory.getLogger(AbstractJMSConsumer.class);
@@ -248,7 +248,7 @@ public abstract class AbstractJMSConsumer implements Lifecycle, Runnable,Initial
 	public void afterPropertiesSet() throws Exception {
 		
 		if(this.destinationName == null){
-			this.destinationName = JMSConfig.JPUSH_QUEUE_NAME;
+			this.destinationName = JMSConfig.DEFAULT_QUEUE_NAME;
 		}
 		logger.info("afterPropertiesSet >>> queueName="+destinationName);
 	}

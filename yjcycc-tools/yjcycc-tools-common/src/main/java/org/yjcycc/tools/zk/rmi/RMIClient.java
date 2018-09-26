@@ -5,7 +5,7 @@ import org.yjcycc.tools.zk.constant.ZkNodeConstant;
 import org.yjcycc.tools.zk.client.AbstractZookeeperClient;
 import org.yjcycc.tools.zk.model.UsingIpPort;
 import org.yjcycc.tools.zk.model.XxNode;
-import org.yjcycc.tools.zk.prop.ToolsProperties;
+import org.yjcycc.tools.zk.prop.ZkProperties;
 
 import java.lang.reflect.InvocationHandler;
 import java.lang.reflect.Method;
@@ -18,7 +18,6 @@ import java.rmi.registry.Registry;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
-import java.util.Map.Entry;
 
 /**
  * RMI服务的客户端，用于获取远程服务；<br>
@@ -97,7 +96,7 @@ public class RMIClient {
 			}
 			@Override
 			public String getConnectUrlForZk() {
-				return ToolsProperties.getInstance().getZookeeperConnUrl();
+				return ZkProperties.getInstance().getZookeeperConnUrl();
 			}
 			@Override
 			public Charset getCharSetForZk() {

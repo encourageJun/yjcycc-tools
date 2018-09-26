@@ -28,7 +28,7 @@ import org.springframework.context.Lifecycle;
  * @author Rosun
  *
  */
-public abstract class AbstractJMSProducer implements Lifecycle,InitializingBean {
+public abstract class AbstractJMSProducer implements Lifecycle, InitializingBean {
 	
 	private static Logger logger = LoggerFactory.getLogger(AbstractJMSProducer.class);
 	// 连接工厂
@@ -154,10 +154,11 @@ public abstract class AbstractJMSProducer implements Lifecycle,InitializingBean 
 		destinationName = specifyDestinationName();
 		
 		if(this.destinationName == null){
-			this.destinationName = JMSConfig.JPUSH_QUEUE_NAME;
+			this.destinationName = JMSConfig.DEFAULT_QUEUE_NAME;
 		}
 		logger.info("destinationName="+destinationName);
 	}
+
 	/**
 	 * 创建map消息
 	 * @return

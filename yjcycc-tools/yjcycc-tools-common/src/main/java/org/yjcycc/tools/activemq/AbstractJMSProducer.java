@@ -62,7 +62,7 @@ public abstract class AbstractJMSProducer implements Lifecycle, InitializingBean
 	public abstract Class<?extends Destination>  specifyDestinationClass();
 	
 	
-	private String brokerUrl = JMSConfig.BROKEURL;
+	private String brokerUrl = JmsProperties.getInstance().getActivemqJmsBrokerUrl();
 	
 	
 	/**

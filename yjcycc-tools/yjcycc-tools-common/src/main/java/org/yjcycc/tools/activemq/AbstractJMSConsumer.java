@@ -93,7 +93,7 @@ public abstract class AbstractJMSConsumer implements Lifecycle, Runnable, Initia
 		logger.info("AbstractJMSConsumer run >>> @" + destClass + ","+ this.destinationName );
 		// 实例化连接工厂
 		connectionFactory = new ActiveMQConnectionFactory(JMSConfig.USERNAME, JMSConfig.PASSWORD,
-				JMSConfig.BROKEURL);
+				JmsProperties.getInstance().getActivemqJmsBrokerUrl());
 		
 		//覆盖默认的初始 的   最大重试次数（默认是6次，这里修改为子类设定）
 		RedeliveryPolicy policy = connectionFactory.getRedeliveryPolicy();

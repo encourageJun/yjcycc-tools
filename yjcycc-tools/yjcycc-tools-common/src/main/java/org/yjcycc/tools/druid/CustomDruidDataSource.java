@@ -33,9 +33,13 @@ public class CustomDruidDataSource extends DruidDataSource {
 	
 	public static void main(String[] args) {
 		try {
-			String username = ConfigTools.encrypt("yjcycc");
-			String password = ConfigTools.encrypt("Yjcycc123");
-			System.out.println(username + "\n" + password);
+			String username = ConfigTools.encrypt("biinsertuser");
+			String password = ConfigTools.encrypt("9=ktvUC6");
+			System.out.println("encrypt: \n" + username + "\n" + password);
+
+			String dUsername = ConfigTools.decrypt("AJSnX8J5NiE0GNvvNyFuZYt6FrcO4hIbPRYuCggR06KkhEivhUxn31vvVRR0VHPpR273XZzcQVCE3xamctOvXQ==");
+			String dPassword = ConfigTools.decrypt("HRdK2y2cTqIoU5K1OSs80cR2d1iLSmrH71pUyuLIZWn6V4pdmOrdcOxJ/meb24zcyaLZ34gzfT3dYN3SaSSqIQ==");
+			System.out.println("decrypt:\n" + dUsername + "\n" + dPassword);
 		} catch (Exception e) {
 			e.printStackTrace();
 		}

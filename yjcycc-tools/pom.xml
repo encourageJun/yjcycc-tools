@@ -10,7 +10,7 @@
   
   <modules>
     <module>yjcycc-tools-common</module>
-    <module>yjcycc-tools-gcmp</module>
+    <!--<module>yjcycc-tools-gcmp</module>-->
   </modules>
   
 
@@ -49,7 +49,7 @@
   <build>
       <!-- <finalName>yjcycc-shop</finalName> -->
       <plugins>
-          <!--<plugin>
+          <plugin>
               <groupId>org.apache.maven.plugins</groupId>
               <artifactId>maven-clean-plugin</artifactId>
               <version>3.0.0</version>
@@ -62,7 +62,7 @@
                       </goals>
                   </execution>
               </executions>
-          </plugin>-->
+          </plugin>
           <plugin>
               <groupId>org.apache.maven.plugins</groupId>
               <artifactId>maven-compiler-plugin</artifactId>

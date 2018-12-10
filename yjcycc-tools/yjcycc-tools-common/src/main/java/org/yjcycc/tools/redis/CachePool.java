@@ -29,7 +29,7 @@ public class CachePool {
 		return cachePool;
 	}
 	
-	public static final String REDIS_CONFIG_FILE = "redis-client.properties";
+	public static final String REDIS_CONFIG_FILE = "redis.properties";
 	
 
 	/** 初始化 */

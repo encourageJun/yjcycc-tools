@@ -14,6 +14,8 @@ public interface MyBatisBaseMapper<T> {
 	T getById(Long id);
 
 	T get(T entity);
+
+	T getByMap(Map<String,Object> map);
 	
 	List<T> findPager(T entity);
 	
@@ -26,12 +28,10 @@ public interface MyBatisBaseMapper<T> {
 	int insert(T entity);
 	
 	int update(T entity);
-	
-	int delete(T entity);
-	
-	T getByMap(Map<String,Object> map);
 
 	int updateByMap(Map<String,Object> map);
+	
+	int delete(T entity);
 	
 	int batchDelete(String ids);
 	

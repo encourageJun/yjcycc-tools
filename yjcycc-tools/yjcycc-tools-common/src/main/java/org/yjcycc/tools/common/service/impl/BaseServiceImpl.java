@@ -52,6 +52,14 @@ public class BaseServiceImpl<T> implements BaseService<T> {
 		return baseMapper.get(entity);
 	}
 
+	public T getById(Long id) throws RemoteException {
+		return baseMapper.getById(id);
+	}
+
+	public T getByMap(Map<String,Object> map) throws RemoteException {
+		return baseMapper.getByMap(map);
+	}
+
 //	@Override
 	public void delete(T entity) throws RemoteException {
 		baseMapper.delete(entity);

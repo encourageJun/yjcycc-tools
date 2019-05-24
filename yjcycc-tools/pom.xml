@@ -37,12 +37,12 @@
   	<repository>
   		<id>yjcycc-releases</id>
   		<name>yjcycc-releases</name>
-  		<url>http://192.168.137.138:8081/repository/yjcycc-releases/</url>
+  		<url>http://192.168.137.139:8081/repository/yjcycc-releases/</url>
   	</repository>
   	<snapshotRepository>
   		<id>yjcycc-snapshots</id>
   		<name>yjcycc-snapshots</name>
-  		<url>http://192.168.137.138:8081/repository/yjcycc-snapshots/</url>
+  		<url>http://192.168.137.139:8081/repository/yjcycc-snapshots/</url>
   	</snapshotRepository>
   </distributionManagement>
   

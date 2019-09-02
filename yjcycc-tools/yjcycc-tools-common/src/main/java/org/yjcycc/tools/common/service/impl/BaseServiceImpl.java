@@ -10,7 +10,6 @@ import org.yjcycc.tools.common.util.PagerUtil;
 
 import java.beans.IntrospectionException;
 import java.beans.PropertyDescriptor;
-import java.lang.reflect.Field;
 import java.lang.reflect.InvocationTargetException;
 import java.lang.reflect.Method;
 import java.rmi.RemoteException;
@@ -54,10 +53,6 @@ public class BaseServiceImpl<T> implements BaseService<T> {
 
 	public T getById(Long id) throws RemoteException {
 		return baseMapper.getById(id);
-	}
-
-	public T getByMap(Map<String,Object> map) throws RemoteException {
-		return baseMapper.getByMap(map);
 	}
 
 //	@Override

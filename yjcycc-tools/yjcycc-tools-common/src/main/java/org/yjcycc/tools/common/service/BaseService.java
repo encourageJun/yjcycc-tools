@@ -18,8 +18,6 @@ public interface BaseService<T> extends Remote {
 	T get(T entity) throws RemoteException;
 
 	T getById(Long id) throws RemoteException;
-
-	T getByMap(Map<String,Object> map) throws RemoteException;
 	
 	void delete(T entity) throws RemoteException;
 	

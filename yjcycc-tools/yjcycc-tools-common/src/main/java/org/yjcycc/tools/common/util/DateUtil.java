@@ -17,6 +17,7 @@ public class DateUtil {
 	public static final String yyyy_MM_dd_HH_mm_ss = "yyyy-MM-dd HH:mm:ss";
 	public static final String HH_mm_ss = "HH:mm:ss";
 	public static final String YYYYMMDDHHMMSS = "yyyyMMddHHmmss";
+	public static final String yyyyMMdd = "yyyyMMdd";
 
 	public static String dateToStr(String pattern) {
 		SimpleDateFormat sdf = new SimpleDateFormat(pattern);
@@ -303,6 +304,19 @@ public class DateUtil {
 		if (startDate.after(endDate)) {
 			throw new RuntimeException("开始时间不能大于结束时间");
 		}
+	}
+
+	/**
+	 * 增加/减少天数
+	 * @param date
+	 * @param day
+	 * @return
+	 */
+	public static Date addDay(Date date, int day) {
+		Calendar cal = Calendar.getInstance();
+		cal.setTime(date);
+		cal.add(Calendar.DAY_OF_MONTH, day);
+		return cal.getTime();
 	}
 
 }
